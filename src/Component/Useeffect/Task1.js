@@ -36,17 +36,17 @@ export default function Task() {
           {data.filter((value) => {
             return (value.name.toUpperCase().indexOf(search.toUpperCase()) >= 0);
           }).map((value) => {
-              return (
-                <tr>
-                  <td>{value.id}</td>
-                  <td>{value.name}</td>
-                  <td>{value.username}</td>
-                  <td>{value.email}</td>
-                  <td>{value.phone}</td>
-                  <td>{value.website}</td>
-                </tr>
-              )
-            })}
+            return (
+              <tr>
+                <td>{value.id}</td>
+                <td>{value.name}</td>
+                <td>{value.username}</td>
+                <td>{value.email}</td>
+                <td>{value.phone}</td>
+                <td>{value.website}</td>
+              </tr>
+            )
+          })}
         </tbody>
       </table>
 

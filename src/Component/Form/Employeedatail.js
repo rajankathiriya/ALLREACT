@@ -15,8 +15,6 @@ const Employeedatail = () => {
     const [validation, setvalidation] = useState({
         firstname: "",
         lastname: "",
-        email: "",
-        mobileNo: "",
         city: "",
         state: "",
         age: ""
@@ -67,10 +65,8 @@ const Employeedatail = () => {
                 <span style={{ color: "red" }}>{validation.firstname}</span><br />
                 Lastname:<input type="text" name="lastname" onChange={myHandler} />
                 <span style={{ color: "red" }}>{validation.lastname}</span><br />
-                Email:<input type="text" name="email" onChange={myHandler} />
-                <span style={{ color: "red" }}>{validation.email}</span><br />
-                Mobile No:<input type="text" name="mobileNo" onChange={myHandler} />
-                <span style={{ color: "red" }}>{validation.mobileNo}</span><br />
+                Email:<input type="email" name="email" onChange={myHandler} /><br />
+                Mobile No:<input type="text" name="mobileNo" onChange={myHandler} /><br />
                 City:<input type="text" name="city" onChange={myHandler} />
                 <span style={{ color: "red" }}>{validation.city}</span><br />
                 State:<input type="text" name="state" onChange={myHandler} />

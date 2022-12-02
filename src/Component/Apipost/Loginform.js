@@ -17,10 +17,10 @@ export default function Loginform() {
                         .then(r => {
                             console.log(r.data);
 
-                            toast("Done")
+                            toast("Registration Successfully..")
                         }).catch(
                             () => {
-                                toast("not")
+                                toast("Invalid username or password")
                             }
                         )
                 }}>

@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import axios from 'axios'
 
-const Registration = () => {
+const ApiPost = () => {
 
     const [data, setdata] = useState({
         title: "",
@@ -46,5 +46,5 @@ const Registration = () => {
     );
 }
 
-export default Registration;
+export default ApiPost;
 
