@@ -52,20 +52,21 @@ root.render(
   <React.StrictMode>
 
     <ToastContainer />
-    {/* <Mytask/> */}
+    {/* <Mytask /> */}
     {/* <Scrollbar /> */}
     {/* <Mycounter /> */}
-    {/* <Magic/> */}
+    {/* <Magic /> */}
     {/* <Mydata /> */}
-    {/* <Fetch/> */}
-    {/* <Task/> */}
-    {/* <DataAxios/> */}
     {/* <Employeedatail /> */}
     {/* <StudentDetail /> */}
 
     {/* ---------------------------------API--------------------------- */}
 
-    {/* test */}
+    {/* <DataAxios /> */}
+    {/* <Fetch /> */}
+    {/* <Task /> */}
+
+    {/* ---------------------------------test--------------------------- */}
     {/* <Data /> */}
     {/* <Formtest /> */}
     {/* <TestAPI1 /> */}
@@ -81,7 +82,7 @@ root.render(
 
     {/* --------------------------FORMIK-FORM--------------------------- */}
     {/* <Mydataformik /> */}
-    {/* <FormikTask /> */}
+    {/* <FormikTask />   */}
     {/* <Carformik /> */}
     {/* <Formyupvalidation /> */}
 
@@ -101,7 +102,7 @@ root.render(
     {/* --------------------------API Post--------------------------- */}
 
     {/* <Registration /> */}
-    <Loginform />
+    {/* <Loginform /> */}
 
   </React.StrictMode>
 );
