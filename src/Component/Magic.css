@@ -1,0 +1,16 @@
+#magic {
+    margin-top: 20px;
+    border: 2px solid black;
+    padding: 40px 50px;
+    border-radius: 20px 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    transition: all 1.5s linear;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+#magic:hover {
+    transform: scale(1.02);
+}

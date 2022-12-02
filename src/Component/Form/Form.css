@@ -1,0 +1,12 @@
+.formyupvalidationin1 {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.263);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+
+.formyupvalidationmain {
+    background-image: url(https://media.istockphoto.com/id/963448782/photo/glitter-vintage-lights-background-dark-gold-and-black-de-focused.jpg?b=1&s=170667a&w=0&k=20&c=RCKgj8XivBksqZrwzM7AP0g3nWxDhqAl62gYiV_UHfA=);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
