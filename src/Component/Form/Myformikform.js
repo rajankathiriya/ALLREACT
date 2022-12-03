@@ -35,7 +35,7 @@ const Mydataformik = () => {
           <Field name="firstname" type="text" />
           <ErrorMessage name='firstname' /><br />
           <label htmlFor="">Middlename:</label>
-          {/* <Field name="middlename" itype="text" /><br /> */}
+          <Field name="middlename" itype="text" /><br />
           <label htmlFor="">Lastname:</label>
           <Field name="lastname" type="text" /><br />
           <label htmlFor="">Age:</label>
