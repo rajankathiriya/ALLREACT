@@ -8,6 +8,8 @@ const Item = () => {
         cnumber: ''
     });
 
+
+
     const myDelete = (index) => {
         let mdata = [...data]
         mdata.splice(index, 1)
