@@ -90,7 +90,7 @@ root.render(
     {/* <Simpleprops /> */}
     {/* <Task1props /> */}
     {/* <Item /> */}
-    {/* <Task1empmain /> */}
+    <Task1empmain />
 
     {/* --------------------------AG-Grid--------------------------- */}
     {/* <Aggrid1 /> */}
