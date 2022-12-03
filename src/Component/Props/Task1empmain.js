@@ -15,25 +15,32 @@ const Task1empmain = () => {
     const [add, setadd] = useState(-1);
     const [search, setsearch] = useState('');
 
+    // ========================Delete=======================
+
     const Mydelete = (index) => {
         let maindata = [...data]
         maindata.splice(index, 1)
         setdata(maindata)
     }
 
+    // ========================Handler=======================
     const myHandler = (e) => {
         setitem({ ...item, [e.target.name]: e.target.value })
     }
 
+    // ========================Search=======================
     const mySearch = (e) => {
         setsearch(e.target.value)
     }
 
+    // ========================Edit=======================
     const Myedit = (index) => {
         let maindata = data[index]
         setitem(maindata);
         setadd(index);
     }
+
+    // ========================Submit=======================
     const Mysubmit = (s) => {
         s.preventDefault();
 
