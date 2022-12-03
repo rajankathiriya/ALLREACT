@@ -24,13 +24,13 @@ export default function Loginform() {
                             }
                         )
                 }}>
-                <Form className='w-25'>
+                <Form className='w-25 mx-auto p-4'>
                     <label>Email Address:</label>
-                    <Field type='text' name='email' className='form-control' />
+                    <Field type='text' name='email' className='form-control' /><br />
                     <label>Password:</label>
-                    <Field type='text' name='password' className='form-control' />
+                    <Field type='text' name='password' className='form-control' /><br />
 
-                    <Field type='submit' value='save' className='form-control btn btn-outline-primary' />
+                    <Field type='submit' value='Sign-in' className='form-control btn btn-outline-primary' />
                 </Form>
             </Formik>
         </div>

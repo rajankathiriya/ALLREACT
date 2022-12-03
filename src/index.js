@@ -102,7 +102,7 @@ root.render(
     {/* --------------------------API Post--------------------------- */}
 
     {/* <Registration /> */}
-    {/* <Loginform /> */}
+    <Loginform />
 
   </React.StrictMode>
 );
