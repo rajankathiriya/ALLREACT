@@ -39,18 +39,21 @@ export default function Tasktest1() {
     }
     return (
         <div>
-            <form onSubmit={mySubmit} className='w-50 mx-auto p-3'>
-                <label>Id:</label>
-                <input type="text" name="id" onChange={myHandler} className='form-control' /><br />
-                <label>Name:</label>
-                <input type="text" name="name" onChange={myHandler} className='form-control' /><br />
-                <label>Username:</label>
-                <input type="text" name="username" onChange={myHandler} className='form-control' /><br />
-                <label>Email:</label>
-                <input type="email" name="email" onChange={myHandler} className='form-control' /><br />
+            <form onSubmit={mySubmit} className='w-50 mx-auto p-3 border shadow-lg m-3 rounded-3'>
+                <fieldset>
+                    <legend className='text-center'>Detaile:</legend>
+                    <label>Id:</label>
+                    <input type="text" name="id" onChange={myHandler} className='form-control' /><br />
+                    <label>Name:</label>
+                    <input type="text" name="name" onChange={myHandler} className='form-control' /><br />
+                    <label>Username:</label>
+                    <input type="text" name="username" onChange={myHandler} className='form-control' /><br />
+                    <label>Email:</label>
+                    <input type="email" name="email" onChange={myHandler} className='form-control' /><br />
+                </fieldset>
 
                 <fieldset>
-                    <legend>Address:</legend><br />
+                    <legend className='text-center'>Address:</legend><br />
                     <label>Street:</label>
                     <input type="text" name="street" onChange={myHandler} className='form-control' /><br />
                     <label>Suite:</label>
@@ -67,7 +70,7 @@ export default function Tasktest1() {
                 <input type="text" name="website" onChange={myHandler} className='form-control' /><br />
 
                 <fieldset>
-                    <legend>Company</legend>
+                    <legend className='text-center'>Company</legend>
                     <label>Name:</label>
                     <input type="text" name="cname" onChange={myHandler} className='form-control' /><br />
                     <label>catchPhrase:</label>
