@@ -6,7 +6,8 @@ import { React } from 'react'
 
 export default function Loginform() {
     return (
-        <div>
+        <div className='w-50 mx-auto '>
+            <h2 className='text-center'>Login Form</h2><hr />
             <Formik initialValues={{
                 email: "",
                 password: ""
@@ -15,16 +16,18 @@ export default function Loginform() {
                 onSubmit={(e) => {
                     axios.post('http://localhost:4000/accounts/authenticate', e)
                         .then(r => {
-                            console.log(r.data);
+                            console.log(r);
 
                             toast("Registration Successfully..")
                         }).catch(
-                            () => {
+                            (r) => {
                                 toast("Invalid username or password")
+
                             }
                         )
                 }}>
-                <Form className='w-25 mx-auto p-4'>
+
+                <Form className='p-4'>
                     <label>Email Address:</label>
                     <Field type='text' name='email' className='form-control' /><br />
                     <label>Password:</label>

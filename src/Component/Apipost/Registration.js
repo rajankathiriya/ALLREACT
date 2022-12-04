@@ -26,6 +26,7 @@ const ApiPost = () => {
     }
     return (
         <div className='w-50 mx-auto'>
+            <h2 className='text-center'>Registration Form</h2><hr />
             <form onSubmit={mySubmit} className=' p-3 '>
                 <label>Title:</label>
                 <input type="text" name="title" className='form-control' onChange={myHandler} /><br />

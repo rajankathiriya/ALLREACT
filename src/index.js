@@ -45,6 +45,8 @@ import Aggrid2 from './Component/Grid/Aggrid2';
 import ClassApicall from './Component/Class/ClassApicall';
 import Loginform from './Component/Apipost/Loginform';
 import Registration from './Component/Apipost/Registration';
+import Submitpost from './Component/Test/Test2/Submitpost';
+import Image from './Component/Test/Test2/Image';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -101,8 +103,12 @@ root.render(
 
     {/* --------------------------API Post--------------------------- */}
 
-    {/* <Registration /> */}
-    <Loginform />
+    {/* <Registration /><br></br><hr /> */}
+    {/* <Loginform /> */}
+
+    {/* --------------------------Test 2--------------------------- */}
+    {/* <Submitpost /> */}
+    <Image />
 
   </React.StrictMode>
 );
