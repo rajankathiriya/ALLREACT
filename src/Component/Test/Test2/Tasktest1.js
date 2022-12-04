@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { React, useState, useEffect } from 'react'
 import { toast } from 'react-toastify';
+import Tasktest2print from './Tasktest2print';
 
 
 export default function Tasktest1() {
@@ -23,6 +24,7 @@ export default function Tasktest1() {
             bs: ""
         }
     });
+    const [item, setitem] = useState([]);
 
     const myHandler = (e) => {
         setdata({ ...data, [e.target.name]: e.target.value })
@@ -31,11 +33,17 @@ export default function Tasktest1() {
     const mySubmit = (e) => {
         e.preventDefault()
 
+        let maindata = [...item]
+        maindata.push(data)
+        setitem(maindata)
+
         axios.post("https://jsonplaceholder.typicode.com/users", data)
             .then(r => {
                 console.log(r);
                 toast("Data submit successfully..")
             })
+
+
     }
     return (
         <div>
@@ -81,6 +89,8 @@ export default function Tasktest1() {
 
                 <input type="submit" value="Save" className='form-control btn btn-outline-primary' />
             </form>
+
+            <Tasktest2print alldata={item} />
         </div>
     )
 }
