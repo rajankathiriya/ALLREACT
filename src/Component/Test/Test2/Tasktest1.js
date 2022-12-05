@@ -96,7 +96,7 @@ export default function Tasktest1() {
                     <input type="text" name="bs" onChange={myHandler} className='form-control' /><br /><br />
                 </fieldset>
 
-                <input type="submit" value="Save" className='form-control btn btn-outline-primary' />
+                {/* <input type="submit" value="Save" className='form-control btn btn-outline-primary' /> */}
             </form>
 
             <Tasktest2print alldata={item} remove={myDelete} />
