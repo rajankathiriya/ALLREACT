@@ -26,6 +26,12 @@ export default function Tasktest1() {
     });
     const [item, setitem] = useState([]);
 
+    const myDelete = (index) => {
+        let maindata = [...item]
+        maindata.splice(index, 1)
+        setitem(maindata)
+    }
+
     const myHandler = (e) => {
         setdata({ ...data, [e.target.name]: e.target.value })
     }
@@ -49,7 +55,7 @@ export default function Tasktest1() {
         <div>
             <form onSubmit={mySubmit} className='w-50 mx-auto p-3 border shadow-lg m-3 rounded-3'>
                 <fieldset>
-                    <legend className='text-center'>Detaile:</legend>
+                    <legend className='text-center' style={{ backgroundColor: "#d0dbdf" }}>Details</legend>
                     <label>Id:</label>
                     <input type="text" name="id" onChange={myHandler} className='form-control' /><br />
                     <label>Name:</label>
@@ -61,7 +67,7 @@ export default function Tasktest1() {
                 </fieldset>
 
                 <fieldset>
-                    <legend className='text-center'>Address:</legend><br />
+                    <legend className='text-center' style={{ backgroundColor: "#d0dbdf" }}>Address</legend><br />
                     <label>Street:</label>
                     <input type="text" name="street" onChange={myHandler} className='form-control' /><br />
                     <label>Suite:</label>
@@ -72,13 +78,16 @@ export default function Tasktest1() {
                     <input type="text" name="zipcode" onChange={myHandler} className='form-control' /><br />
                 </fieldset>
 
-                <label>Phone:</label>
-                <input type="text" name="phone" onChange={myHandler} className='form-control' /><br />
-                <label>Website:</label>
-                <input type="text" name="website" onChange={myHandler} className='form-control' /><br />
+                <fieldset >
+                    <legend className='text-center' style={{ backgroundColor: "#d0dbdf" }}>Contact</legend>
+                    <label>Phone:</label>
+                    <input type="text" name="phone" onChange={myHandler} className='form-control' /><br />
+                    <label>Website:</label>
+                    <input type="text" name="website" onChange={myHandler} className='form-control' /><br />
+                </fieldset>
 
                 <fieldset>
-                    <legend className='text-center'>Company</legend>
+                    <legend className='text-center' style={{ backgroundColor: "#d0dbdf" }}>Company</legend>
                     <label>Name:</label>
                     <input type="text" name="cname" onChange={myHandler} className='form-control' /><br />
                     <label>catchPhrase:</label>
@@ -90,7 +99,7 @@ export default function Tasktest1() {
                 <input type="submit" value="Save" className='form-control btn btn-outline-primary' />
             </form>
 
-            <Tasktest2print alldata={item} />
+            <Tasktest2print alldata={item} remove={myDelete} />
         </div>
     )
 }

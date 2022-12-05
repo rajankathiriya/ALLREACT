@@ -7,14 +7,18 @@ export default function Tasktest2print(data) {
                 <div>
                     <table>
                         <thead>
-                            <th> <td style={{ border: "none" }} >First Name </td></th>
-                            <th> <td style={{ border: "none" }} >Last Name: </td></th>
-                            <th> <td style={{ border: "none" }} >Email </td></th>
-                            <th> <td style={{ border: "none" }} >Mobile </td></th>
-                            <th> <td style={{ border: "none" }} >City </td></th>
-                            <th> <td style={{ border: "none" }} >University </td></th>
-                            <th> <td style={{ border: "none" }} >Edit </td></th>
-                            <th> <td style={{ border: "none" }} >Delete </td></th>
+                            <th>ID </th>
+                            <th>Name </th>
+                            <th>UserId </th>
+                            <th>Email </th>
+                            <th>street</th>
+                            <th>suite</th>
+                            <th>city</th>
+                            <th>zipcode</th>
+                            <th>Phone </th>
+                            <th>Website </th>
+                            <th>Company </th>
+                            <th>Delete </th>
                         </thead>
                         <tbody>
 
@@ -33,8 +37,8 @@ export default function Tasktest2print(data) {
                                             <td>{item.zipcode}</td>
                                             <td>{item.phone}</td>
                                             <td>{item.website}</td>
-                                            {/* <td><button className='form-control btn btn-outline-success' onClick={() => { props.edit(index) }}>Edit</button><br /><br /></td> */}
-                                            {/* <td><button onClick={() => { props.remove(index) }} className='form-control btn btn-outline-danger' >Delete</button><br /><br /></td> */}
+                                            <td>{item.cname}</td>
+                                            <td><button onClick={() => { data.remove(index) }} className='form-control btn btn-outline-danger' >Delete</button><br /><br /></td>
                                         </tr>
                                     )
                                 })}

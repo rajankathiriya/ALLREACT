@@ -48,7 +48,6 @@ import Registration from './Component/Apipost/Registration';
 import Submitpost from './Component/Test/Test2/Submitpost';
 import Image from './Component/Test/Test2/Image';
 import Tasktest1 from './Component/Test/Test2/Tasktest1';
-import Tasktest2props from './Component/Test/Test2/Tasktest2props';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -111,8 +110,7 @@ root.render(
     {/* --------------------------Test 2--------------------------- */}
     {/* <Submitpost /> */}
     {/* <Image /> */}
-    {/* <Tasktest1 /> */}
-    <Tasktest2props />
+    <Tasktest1 />
 
   </React.StrictMode>
 );
