@@ -49,11 +49,11 @@ export default function Form1mui() {
                 select
                 variant='filled'
                 helperText='Please Select your city'
-                SelectProps={{
-                    native: true
-                }}
                 onChange={myHandler}
-                name='city'>
+                name='city'
+                SelectProps={{
+                    native: 'true'
+                }}>
                 <option>City</option>
                 <option>Junagadh</option>
                 <option>Baroda</option>

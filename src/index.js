@@ -49,6 +49,7 @@ import Submitpost from './Component/Test/Test2/Submitpost';
 import Image from './Component/Test/Test2/Image';
 import Tasktest1 from './Component/Test/Test2/Tasktest1';
 import Form1mui from './Component/Material-UI/Form1mui';
+import ReactMemo from './Component/ReactMemo/ReactMemo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -114,8 +115,10 @@ root.render(
     {/* <Tasktest1 /> */}
 
     {/* --------------------------Material UI--------------------------- */}
-    <Form1mui />
+    {/* <Form1mui /> */}
 
+    {/* --------------------------ReactMemo--------------------------- */}
+    <ReactMemo />
   </React.StrictMode>
 );
 
