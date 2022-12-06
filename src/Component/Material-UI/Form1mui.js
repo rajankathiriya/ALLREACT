@@ -24,7 +24,7 @@ export default function Form1mui() {
         <form onSubmit={mysubmit}>
             <TextField
                 label='First Name'
-                variant='standard'
+                variant='filled'
                 onChange={myHandler}
                 name='fname'>
             </TextField><br /><br />
@@ -32,14 +32,14 @@ export default function Form1mui() {
             <TextField
                 label='Last Name'
                 required
-                variant='standard'
+                variant='filled'
                 onChange={myHandler}
                 name='lname'>
             </TextField><br /><br />
 
             <TextField
                 label='Email'
-                variant='standard'
+                variant='filled'
                 onChange={myHandler}
                 name='email'>
             </TextField><br /><br />
@@ -64,14 +64,14 @@ export default function Form1mui() {
 
             <TextField
                 label='Zip Code'
-                variant='standard'
+                variant='filled'
                 onChange={myHandler}
                 name='zip'>
             </TextField><br /><br />
 
             <TextField
                 label='State'
-                variant='standard'
+                variant='filled'
                 onChange={myHandler}
                 name='state'>
             </TextField><br /><br />
