@@ -50,6 +50,7 @@ import Image from './Component/Test/Test2/Image';
 import Tasktest1 from './Component/Test/Test2/Tasktest1';
 import Form1mui from './Component/Material-UI/Form1mui';
 import ReactMemo from './Component/ReactMemo/ReactMemo';
+import Reactusememo from './Component/ReactMemo/Reactusememo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -117,8 +118,13 @@ root.render(
     {/* --------------------------Material UI--------------------------- */}
     {/* <Form1mui /> */}
 
-    {/* --------------------------ReactMemo--------------------------- */}
-    <ReactMemo />
+    {/* --------------------------ReactMemo /useCallback--------------------------- */}
+    {/* <ReactMemo /> */}
+
+    {/* ------------------------useMemo----------------------------- */}
+    <Reactusememo text="My name is rajan kathiriya.i am 20 years old. im currently pursuing in bechrol of commerse in M.S.university.I want to become feature in Web developer, I want to thing i am good chess player... " />
+
+
   </React.StrictMode>
 );
 

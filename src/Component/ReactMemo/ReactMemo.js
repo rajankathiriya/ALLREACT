@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React, useState, useCallback } from 'react'
 import ReactMemo2 from './ReactMemo2';
 
 export default function ReactMemo() {
@@ -14,12 +14,23 @@ export default function ReactMemo() {
         mitem.push(data)
         setitem(mitem)
     }
+    // USEMEMO
+
+    const remove =
+        useCallback((index) => {
+            let mitem = [...item]
+            mitem.splice(index, 1)
+            setitem(mitem)
+        }, [])
+
+
+
     return (
         <div>
             <input type="text" onChange={myHandler} />
             <button onClick={mySubmit}>Save</button>
 
-            <ReactMemo2 data={item} />
+            <ReactMemo2 data={item} remove={remove} />
         </div>
     )
 }
