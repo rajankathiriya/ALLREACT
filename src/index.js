@@ -118,10 +118,10 @@ root.render(
     {/* --------------------------Material UI--------------------------- */}
     {/* <Form1mui /> */}
 
-    {/* --------------------------ReactMemo /useCallback--------------------------- */}
+    {/* --------------------------ReactMemo /useCallback-memorible function--------------------------- */}
     {/* <ReactMemo /> */}
 
-    {/* ------------------------useMemo----------------------------- */}
+    {/* ------------------------useMemo memorible value----------------------------- */}
     <Reactusememo text="My name is rajan kathiriya.i am 20 years old. im currently pursuing in bechrol of commerse in M.S.university.I want to become feature in Web developer, I want to thing i am good chess player... " />
 
 
