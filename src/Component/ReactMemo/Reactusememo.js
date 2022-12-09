@@ -6,8 +6,7 @@ export default function Reactusememo(props) {
 
     const truevalue = useMemo(() => {
         console.log("Data Displeyed...");
-        return props.text.slice(0, 30).
-            concat('...')
+        return props.text.slice(0, 30).concat('...')
     }, [])
     return (
         <div>
