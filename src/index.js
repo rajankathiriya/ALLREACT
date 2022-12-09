@@ -122,7 +122,7 @@ root.render(
     {/* <ReactMemo /> */}
 
     {/* ------------------------useMemo memorible value----------------------------- */}
-    <Reactusememo text="My name is rajan kathiriya.i am 20 years old. im currently pursuing in bechrol of commerse in M.S.university.I want to become feature in Web developer, I want to thing i am good chess player... " />
+    <Reactusememo te3 xt="My name is rajan kathiriya.i am 20 years old. im currently pursuing in bechrol of commerse in M.S.university.I want to become feature in Web developer, I want to thing i am good chess player... " />
 
 
   </React.StrictMode>
