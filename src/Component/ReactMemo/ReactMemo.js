@@ -22,10 +22,6 @@ export default function ReactMemo() {
             mitem.splice(index, 1)
             setitem(mitem)
         }, [])
-
-
-
-
     return (
         <div>
             <input type="text" onChange={myHandler} />
