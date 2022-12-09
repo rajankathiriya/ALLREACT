@@ -52,6 +52,10 @@ import Form1mui from './Component/Material-UI/Form1mui';
 import ReactMemo from './Component/ReactMemo/ReactMemo';
 import Reactusememo from './Component/ReactMemo/Reactusememo';
 
+import { Provider } from 'react-redux'
+import Counter from './Component/Reduxreduce/Counter';
+import store from './Component/Reduxreduce/Store/Store';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -122,7 +126,12 @@ root.render(
     {/* <ReactMemo /> */}
 
     {/* ------------------------useMemo memorible value----------------------------- */}
-    <Reactusememo te3 xt="My name is rajan kathiriya.i am 20 years old. im currently pursuing in bechrol of commerse in M.S.university.I want to become feature in Web developer, I want to thing i am good chess player... " />
+    {/* <Reactusememo te3 xt="My name is rajan kathiriya.i am 20 years old. im currently pursuing in bechrol of commerse in M.S.university.I want to become feature in Web developer, I want to thing i am good chess player... " /> */}
+
+    {/* ------------------------React reduce----------------------------- */}
+    <Provider store={store}>
+      <Counter />
+    </Provider>
 
 
   </React.StrictMode>
