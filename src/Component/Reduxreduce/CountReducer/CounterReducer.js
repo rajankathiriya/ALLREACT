@@ -1,7 +1,3 @@
-
-
-const initialState = {}
-
 export default (state = 0, { type, payload }) => {
     switch (type) {
 
@@ -18,3 +14,4 @@ export default (state = 0, { type, payload }) => {
             return state
     }
 }
+

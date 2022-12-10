@@ -1,3 +1,8 @@
+// export const first = (payload) => ({
+//   type: second,
+//   payload
+// })
+
 export const Increment = () => ({
     type: "Increment",
 });
@@ -10,3 +15,4 @@ export const Multiplication = () => ({
 export const Division = () => ({
     type: "Division",
 });
+

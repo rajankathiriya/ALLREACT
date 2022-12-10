@@ -9,15 +9,12 @@ export default function Mydata() {
         setInput(e.target.value)
     }
 
-    const Show = () => {
-
-    }
 
     return (
         <div>
             <input type="text" onChange={Handler} value={Input} />
 
-            <button onClick={Show}>Click</button>
+            <button>Click</button>
 
             {reviews.filter((value, index, array) => {
                 return (value.name.indexOf(Input) >= 0)
@@ -26,7 +23,7 @@ export default function Mydata() {
                     return <h5>{value.name}</h5>
                 })}
         </div>
-         
+
     )
 }
 

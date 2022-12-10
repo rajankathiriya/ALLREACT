@@ -5,7 +5,6 @@ import { Decrement, Division, Increment, Multiplication } from './Action/Action'
 export default function Counter() {
     const data = useSelector(y => y);
 
-
     const mydisp = useDispatch();
 
     const increment = () => {
