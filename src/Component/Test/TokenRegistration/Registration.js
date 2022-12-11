@@ -25,7 +25,7 @@ export default function Registration2() {
 
         axios.post("http://localhost:4000/accounts/register", data).then(y => {
             console.log(y.data);
-            toast("Done")
+            toast("Registration Success.")
         })
     }
     return (

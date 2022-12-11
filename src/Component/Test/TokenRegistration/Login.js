@@ -42,7 +42,7 @@ export default function Login() {
                 console.log(y);
 
                 localStorage.setItem("user", JSON.stringify(y.data))
-                toast("Registration Successfully.....")
+                toast("Login Successfully.....")
             }).catch(() => {
                 toast("Email and password invalid")
             })
