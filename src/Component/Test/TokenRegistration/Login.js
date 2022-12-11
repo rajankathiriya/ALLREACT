@@ -49,7 +49,7 @@ export default function Login() {
     }
 
     // ==================Token===========================
-    const Fetcdata = (p) => {
+    const Fetcdata = () => {
         let data = localStorage.getItem("user")
         let r = JSON.parse(data)
         axios.get("http://localhost:4000/accounts", {
