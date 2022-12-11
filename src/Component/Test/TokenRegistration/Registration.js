@@ -30,7 +30,7 @@ export default function Registration2() {
     }
     return (
         <div>
-            <form onSubmit={mySubmit} className='w-50 mx-auto p-2 m-5'>
+            <form onSubmit={mySubmit} className='w-50 mx-auto border p-4 rounded bg-white m-5'>
                 <h3 className='text-center'>Registration Form</h3>
 
                 <TextField

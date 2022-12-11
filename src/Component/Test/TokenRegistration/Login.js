@@ -68,7 +68,7 @@ export default function Login() {
     }
     return (
         <div>
-            <form onSubmit={myLogin} className='w-50 mx-auto p-2 m-5'>
+            <form onSubmit={myLogin} className='w-50 mx-auto m-5 border p-4 rounded bg-white'>
                 <h3 className='text-center'>Login Form</h3>
 
                 <TextField
