@@ -41,7 +41,7 @@ export default function Login() {
             .then(y => {
                 console.log(y);
 
-                localStorage.setItem("user", JSON.stringify(y.data))
+                localStorage.setItem("userData", JSON.stringify(y.data))
                 toast("Login Successfully.....")
             }).catch(() => {
                 toast("Email and password invalid")
@@ -50,7 +50,7 @@ export default function Login() {
 
     // ==================Token===========================
     const Fetcdata = () => {
-        let data = localStorage.getItem("user")
+        let data = localStorage.getItem("userData")
         let r = JSON.parse(data)
         axios.get("http://localhost:4000/accounts", {
             headers: {
@@ -58,7 +58,7 @@ export default function Login() {
             }
         })
             .then(r => {
-                setrow(r.data);//Data Print in Table
+                setrow(r.data);//Data Print in Table/Grid
             }).catch(
                 y => {
                     console.log(y);
