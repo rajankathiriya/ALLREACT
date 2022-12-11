@@ -88,7 +88,7 @@ export default function Login() {
                     name='password'>
                 </TextField><br /><br />
                 <input type="submit" value="Login" className='form-control btn btn-outline-primary' /><br /><br />
-                <button onClick={Fetcdata} className='form-control btn btn-outline-danger'>Fetch</button>
+                <button onClick={Fetcdata} className='form-control btn btn-outline-danger'>Fetch Data</button>
             </form>
 
             <div className="ag-theme-alpine" style={{ width: "100 %", height: 600 }}>
