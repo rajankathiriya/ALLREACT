@@ -55,6 +55,8 @@ import Reactusememo from './Component/ReactMemo/Reactusememo';
 import { Provider } from 'react-redux'
 import Counter from './Component/Reduxreduce/Counter';
 import store from './Component/Reduxreduce/Store/Store';
+import Registration2 from './Component/Test/TokenRegistration/Registration';
+import Login from './Component/Test/TokenRegistration/Login';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -129,10 +131,13 @@ root.render(
     {/* <Reactusememo te3 xt="My name is rajan kathiriya.i am 20 years old. im currently pursuing in bechrol of commerse in M.S.university.I want to become feature in Web developer, I want to thing i am good chess player... " /> */}
 
     {/* ------------------------React reduce----------------------------- */}
-    <Provider store={store}>
+    {/* <Provider store={store}>
       <Counter />
-    </Provider>
+    </Provider> */}
 
+    {/* ------------------ -Login form with Token --------------------- */}
+    <Registration2 />
+    <Login />
 
   </React.StrictMode>
 );

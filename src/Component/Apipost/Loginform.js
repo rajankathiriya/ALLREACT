@@ -5,6 +5,23 @@ import { Field, Formik, Form } from 'formik'
 import { React } from 'react'
 
 export default function Loginform() {
+    const dataFetch = (e) => {
+        let data = localStorage.getItem("user")
+        let p = JSON.parse(data)
+        axios.get("http://localhost:4000/accounts", {
+            headers: {
+                "Authorization": "Bearer " + p?.jwtToken
+            }
+        }).then(
+            e => {
+                console.log(e.data);
+            }
+        ).catch(
+            y => {
+                console.log(y);
+            }
+        )
+    }
     return (
         <div className='w-50 mx-auto '>
             <h2 className='text-center'>Login Form</h2><hr />
@@ -18,14 +35,18 @@ export default function Loginform() {
                         .then(r => {
                             console.log(r);
 
+                            localStorage.setItem('user', JSON.stringify(r.data))
+
                             toast("Registration Successfully..")
                         }).catch(
                             (r) => {
                                 toast("Invalid username or password")
-
                             }
                         )
-                }}>
+                }}
+            >
+
+
 
                 <Form className='p-4'>
                     <label>Email Address:</label>
@@ -36,6 +57,7 @@ export default function Loginform() {
                     <Field type='submit' value='Sign-in' className='form-control btn btn-outline-primary' />
                 </Form>
             </Formik>
+            <button onClick={dataFetch}>FetchData</button>
         </div>
     )
 }
