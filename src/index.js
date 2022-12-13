@@ -55,9 +55,9 @@ import Reactusememo from './Component/ReactMemo/Reactusememo';
 import { Provider } from 'react-redux'
 import Counter from './Component/Reduxreduce/Counter';
 import store from './Component/Reduxreduce/Store/Store';
-import Registration2 from './Component/Test/TokenRegistration/Registration';
-import Login from './Component/Test/TokenRegistration/Login';
-
+import Registration2 from './Component/Axios/TokenRegistration/Registration';
+import Login from './Component/Axios/TokenRegistration/Login';
+import Globalaxios from './Component/Axios/Globalaxios'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

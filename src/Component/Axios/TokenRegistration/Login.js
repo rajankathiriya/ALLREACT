@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import 'ag-grid-community/styles/ag-grid.css'; // Core grid CSS, always needed
 import 'ag-grid-community/styles/ag-theme-alpine.css'; // Optional theme CSS
 import { TextField } from '@mui/material';
+import dataFetch from '../Costom';
 
 export default function Login() {
     // =======================Login info====================    
@@ -50,14 +51,14 @@ export default function Login() {
 
     // ==================Token===========================
     const Fetcdata = (y) => {
-        let data = localStorage.getItem("userData")
-        let r = JSON.parse(data)
+        // let data = localStorage.getItem("userData")
+        // let r = JSON.parse(data)
 
-        axios.get("http://localhost:4000/accounts", {
-            headers: {
-                "Authorization": "Bearer " + r?.jwtToken
-            }
-        })
+        dataFetch.get("http://localhost:4000/accounts",
+            {    // headers: {
+                //     "Authorization": "Bearer " + r?.jwtToken
+                // }
+            })
             .then(r => {
                 setrow(r.data);//Data Print in Table/Grid
             }).catch(
