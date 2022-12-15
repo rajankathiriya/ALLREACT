@@ -59,6 +59,8 @@ import Registration2 from './Component/Axios/TokenRegistration/Registration';
 import Login from './Component/Axios/TokenRegistration/Login';
 import Globalaxios from './Component/Axios/Globalaxios'
 
+import AudioTask from './Component/useRef/Audio';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -136,9 +138,11 @@ root.render(
     </Provider> */}
 
     {/* ------------------ -Login form with Token --------------------- */}
-    <Registration2 />
-    <Login />
+    {/* <Registration2 /> */}
+    {/* <Login /> */}
 
+    {/* ------------------ -UseRef --------------------- */}
+    <AudioTask />
   </React.StrictMode>
 );
 
