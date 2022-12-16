@@ -68,6 +68,8 @@ import Homes from './Component/RouterTask/Homes';
 import Contact from './Component/RouterTask/Contact';
 import About from './Component/RouterTask/About';
 import Error from './Component/RouterTask/Error';
+import UseeffectLimitlevel2 from './Component/Useeffect/UseeffectLimitlevel2';
+import Counteruseeffect from './Component/Useeffect/Counteruseeffect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -153,7 +155,7 @@ root.render(
     {/* <AudioTask /> */}
 
     {/* ------------------ -Routers --------------------- */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <Headers />
       <Routes>
         <Route path='/' element={<Homes />}>Home</Route>
@@ -162,7 +164,8 @@ root.render(
         <Route path='*' element={<Error />}></Route>
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <Counteruseeffect />
 
   </React.StrictMode>
 );
