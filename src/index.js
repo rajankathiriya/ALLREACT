@@ -61,6 +61,14 @@ import Globalaxios from './Component/Axios/Globalaxios'
 
 import AudioTask from './Component/useRef/Audio';
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Headers from './Component/RouterTask/Headers';
+import Footer from './Component/RouterTask/Footer';
+import Homes from './Component/RouterTask/Homes';
+import Contact from './Component/RouterTask/Contact';
+import About from './Component/RouterTask/About';
+import Error from './Component/RouterTask/Error';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -142,11 +150,23 @@ root.render(
     {/* <Login /> */}
 
     {/* ------------------ -UseRef --------------------- */}
-    <AudioTask />
+    {/* <AudioTask /> */}
+
+    {/* ------------------ -Routers --------------------- */}
+    <BrowserRouter>
+      <Headers />
+      <Routes>
+        <Route path='/' element={<Homes />}>Home</Route>
+        <Route path='/contact' element={<Contact />}>Contact</Route>
+        <Route path='/about' element={<About />}>About</Route>
+        <Route path='*' element={<Error />}></Route>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+
 reportWebVitals();
