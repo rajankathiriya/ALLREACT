@@ -70,6 +70,7 @@ import About from './Component/RouterTask/About';
 import Error from './Component/RouterTask/Error';
 import UseeffectLimitlevel2 from './Component/Useeffect/UseeffectLimitlevel2';
 import Counteruseeffect from './Component/Useeffect/Counteruseeffect';
+import MYreducerlevel2 from './Component/Reduxreduce/MYreducerlevel2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -84,11 +85,13 @@ root.render(
     {/* <Employeedatail /> */}
     {/* <StudentDetail /> */}
 
-    {/* ---------------------------------API--------------------------- */}
+    {/* ---------------------------------API/UseEffect--------------------------- */}
 
     {/* <DataAxios /> */}
     {/* <Fetch /> */}
     {/* <Task /> */}
+    {/* ---------------------------------API/UseEffect LEVEL-2 --------------------------- */}
+    {/* <Counteruseeffect /> */}
 
     {/* ---------------------------------test--------------------------- */}
     {/* <Data /> */}
@@ -142,10 +145,12 @@ root.render(
     {/* ------------------------useMemo memorible value----------------------------- */}
     {/* <Reactusememo te3 xt="My name is rajan kathiriya.i am 20 years old. im currently pursuing in bechrol of commerse in M.S.university.I want to become feature in Web developer, I want to thing i am good chess player... " /> */}
 
-    {/* ------------------------React reduce----------------------------- */}
+    {/* ------------------------React reduce / Level-1----------------------------- */}
     {/* <Provider store={store}>
       <Counter />
     </Provider> */}
+    {/* ------------------------React reduce / Level-2----------------------------- */}
+    <MYreducerlevel2 />
 
     {/* ------------------ -Login form with Token --------------------- */}
     {/* <Registration2 /> */}
@@ -165,7 +170,6 @@ root.render(
       </Routes>
       <Footer />
     </BrowserRouter> */}
-    <Counteruseeffect />
 
   </React.StrictMode>
 );
