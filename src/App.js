@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Child1 from './Component/useContext/Child1';
+import { useState } from 'react';
+import Language from './Component/useContext/createContext';
+import Header from './Component/useContext/Header';
 
 function App() {
+
+  // const [data, setdata] = useState("My name is rajan kathiriya");
+
+  const [lan, setlan] = useState("english");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Language.Provider value={{ lan, setlan }}>
+      <Header />
+      <Child1 />
+    </Language.Provider>
   );
 }
 

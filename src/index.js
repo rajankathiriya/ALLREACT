@@ -10,6 +10,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
 
+
 import Home from './Component/Home';
 import Mycounter from './Component/Mycounter';
 import Magic from './Component/Magic';
@@ -150,7 +151,7 @@ root.render(
       <Counter />
     </Provider> */}
     {/* ------------------------React reduce / Level-2----------------------------- */}
-    <MYreducerlevel2 />
+    {/* <MYreducerlevel2 /> */}
 
     {/* ------------------ -Login form with Token --------------------- */}
     {/* <Registration2 /> */}
@@ -170,6 +171,8 @@ root.render(
       </Routes>
       <Footer />
     </BrowserRouter> */}
+
+    <App />
 
   </React.StrictMode>
 );

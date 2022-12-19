@@ -13,7 +13,11 @@ const MYreducerlevel2 = () => {
                 mdata.splice(action.payload, 1)
 
                 return mdata;
-
+            // const Myedit = (index) => {
+            //     let maindata = data[index]
+            //     setitem(maindata);
+            //     setadd(index);
+            // }
 
             default:
                 return state
@@ -27,23 +31,25 @@ const MYreducerlevel2 = () => {
     }
     const mySubmit = () => {
         setitem({ type: "ADD", payload: data })
-
     }
     const myDelete = (e) => {
-
         setitem({ type: "DELETE", payload: e })
-
     }
+    const myEdit = (e) => {
+        setitem({ type: "EDIT", payload: e })
+    }
+
 
     return (
         <div >
             <input type="text" value={data} onChange={myHandler} />
             <input type="button" value="Save" onClick={mySubmit} />
 
-
             {item.map((val, index) => {
                 return (
-                    <h5 className='text-black'>{val}    <input type="button" value="Delete" onClick={myDelete} /></h5>
+                    <h5 className='text-black'>{val}
+                        <input type="button" value="Delete" onClick={() => { myDelete(index) }} />
+                        <input type="button" value="Edit" onClick={() => { myEdit(index) }} /></h5>
                 )
             })}
         </div>
