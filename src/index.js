@@ -72,6 +72,20 @@ import Error from './Component/RouterTask/Error';
 import UseeffectLimitlevel2 from './Component/Useeffect/UseeffectLimitlevel2';
 import Counteruseeffect from './Component/Useeffect/Counteruseeffect';
 import MYreducerlevel2 from './Component/Reduxreduce/MYreducerlevel2';
+import Profile from './Component/RouterTask/Profile';
+import User from './Component/RouterTask/User';
+import Loginpage from './Component/RouterTask/Loginpage';
+import Html from './Component/RouterTask/W3schooltask/Html';
+import Css from './Component/RouterTask/W3schooltask/Css';
+import Javascript from './Component/RouterTask/W3schooltask/Javascript';
+import Headersw3 from './Component/RouterTask/W3schooltask/Headersw3';
+import Html1 from './Component/RouterTask/W3schooltask/Html1';
+import Html2 from './Component/RouterTask/W3schooltask/Html2';
+import Homew3 from './Component/RouterTask/W3schooltask/Homew3';
+import Css1 from './Component/RouterTask/W3schooltask/Css1';
+import Css2 from './Component/RouterTask/W3schooltask/Css2';
+import Js1 from './Component/RouterTask/W3schooltask/Js1';
+import Js2 from './Component/RouterTask/W3schooltask/Js2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -166,13 +180,39 @@ root.render(
       <Routes>
         <Route path='/' element={<Homes />}>Home</Route>
         <Route path='/contact' element={<Contact />}>Contact</Route>
-        <Route path='/about' element={<About />}>About</Route>
+        <Route path='/contact' element={<About />}>About</Route>
+
+        <Route path='/user' element={<User />}>
+          <Route path='profile' element={<Profile />}></Route>
+          <Route path='loginpage' element={<Loginpage />}></Route>
+        </Route>
+
         <Route path='*' element={<Error />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter> */}
 
-    <App />
+    {/* ====================================W3 School==================================== */}
+    <BrowserRouter>
+      <Headersw3 />
+      <Routes>
+        <Route path='/' element={<Homew3 />}>CSS</Route>
+        <Route path='/html' element={<Html />}>
+          <Route path='html1' element={<Html1 />} />
+          <Route path='html2' element={<Html2 />} />
+        </Route>
+        <Route path='/css' element={<Css />}>
+          <Route path='css1' element={<Css1 />} />
+          <Route path='css2' element={<Css2 />} />
+        </Route>
+        <Route path='/Javascript' element={<Javascript />}>
+          <Route path='js1' element={<Js1 />} />
+          <Route path='js2' element={<Js2 />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
+    {/* <App /> */}
 
   </React.StrictMode>
 );

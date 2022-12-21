@@ -19,8 +19,12 @@ export default function Headers() {
                             <Link to={'/contact'}>Contact</Link>
                         </li>
                         <li className=''>
+                            <Link to={'/user'}>User</Link>
+                        </li>
+                        <li className='mx-3'>
                             <Link to={'/about'}>About</Link>
                         </li>
+
                     </ul>
                 </div>
             </nav>
