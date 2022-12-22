@@ -25,13 +25,13 @@ export default function HeaderAuth() {
                                 Home
                             </li>
                             <li className='mx-3'>
-                                HTML
+                                Fashion
                             </li>
                             <li className=''>
-                                CSS
+                                Mobile
                             </li>
                             <li className='mx-3'>
-                                JavaScript
+                                Games
                             </li>
 
                         </ul>
