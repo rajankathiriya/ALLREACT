@@ -3,25 +3,28 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import { Field, Formik, Form } from 'formik'
 import { React } from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Loginform() {
-    const dataFetch = (e) => {
-        let data = localStorage.getItem("user")
-        let p = JSON.parse(data)
-        axios.get("http://localhost:4000/accounts", {
-            headers: {
-                "Authorization": "Bearer " + p?.jwtToken
-            }
-        }).then(
-            e => {
-                console.log(e.data);
-            }
-        ).catch(
-            y => {
-                console.log(y);
-            }
-        )
-    }
+
+    const myNav = useNavigate()
+    // const dataFetch = (e) => {
+    //     let data = localStorage.getItem("user")
+    //     let p = JSON.parse(data)
+    //     axios.get("http://localhost:4000/accounts", {
+    //         headers: {
+    //             "Authorization": "Bearer " + p?.jwtToken
+    //         }
+    //     }).then(
+    //         e => {
+    //             console.log(e.data);
+    //         }
+    //     ).catch(
+    //         y => {
+    //             console.log(y);
+    //         }
+    //     )
+    // }
     return (
         <div className='w-50 mx-auto '>
             <h2 className='text-center'>Login Form</h2><hr />
@@ -36,6 +39,7 @@ export default function Loginform() {
                             console.log(r);
 
                             localStorage.setItem('user', JSON.stringify(r.data))
+                            myNav("/product")
 
                             toast("Registration Successfully..")
                         }).catch(
@@ -56,8 +60,13 @@ export default function Loginform() {
 
                     <Field type='submit' value='Sign-in' className='form-control btn btn-outline-primary' />
                 </Form>
-            </Formik>
-            <button onClick={dataFetch}>FetchData</button>
+            </Formik><hr />
+            <div className='text-center '>
+
+                <Link to={"/register"} >Create a new account</Link>
+
+            </div>
+            {/* <button onClick={dataFetch}>FetchData</button> */}
         </div>
     )
 }

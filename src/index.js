@@ -193,7 +193,7 @@ root.render(
     </BrowserRouter> */}
 
     {/* ====================================W3 School==================================== */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <Headersw3 />
       <Routes>
         <Route path='/' element={<Homew3 />}>CSS</Route>
@@ -210,10 +210,10 @@ root.render(
           <Route path='js2' element={<Js2 />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
 
 
-    {/* <App /> */}
+    <App />
 
   </React.StrictMode>
 );
