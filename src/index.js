@@ -86,6 +86,7 @@ import Css1 from './Component/RouterTask/W3schooltask/Css1';
 import Css2 from './Component/RouterTask/W3schooltask/Css2';
 import Js1 from './Component/RouterTask/W3schooltask/Js1';
 import Js2 from './Component/RouterTask/W3schooltask/Js2';
+import File from './Component/FileUplode/File';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -213,7 +214,10 @@ root.render(
     </BrowserRouter> */}
 
 
-    <App />
+    {/* ======================================File uplode===================================== */}
+    <File />
+
+    {/* <App /> */}
 
   </React.StrictMode>
 );
