@@ -87,6 +87,9 @@ import Css2 from './Component/RouterTask/W3schooltask/Css2';
 import Js1 from './Component/RouterTask/W3schooltask/Js1';
 import Js2 from './Component/RouterTask/W3schooltask/Js2';
 import File from './Component/FileUplode/File';
+import Inquiry from './Inquiry';
+import ErrorBoundry from './Component/Error/ErrorBoundry';
+import BuggyCounter from './Component/Error/BuggyCounter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -215,7 +218,14 @@ root.render(
 
 
     {/* ======================================File uplode===================================== */}
-    <File />
+    {/* <File /> */}
+
+    {/* <Inquiry /> */}
+
+    {/* ======================================Error hendling====================================== */}
+    <ErrorBoundry>
+      <BuggyCounter />
+    </ErrorBoundry>
 
     {/* <App /> */}
 
