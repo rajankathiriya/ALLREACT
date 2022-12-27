@@ -92,6 +92,7 @@ import { ErrorBoundary } from 'react-error-boundary'
 import BuggyCounter from './Component/Error/BuggyCounter';
 import Example1 from './Component/Customhook/Example1';
 import { ErrorFallback } from './Component/Error/ErrorFallback';
+import Footer1 from './Component/Footer/Footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -230,7 +231,8 @@ root.render(
     </ErrorBoundary> */}
 
     {/* ======================================Custom Hook====================================== */}
-    <Example1 />
+    {/* <Example1 /> */}
+    <Footer1 />
 
     {/* <App /> */}
   </React.StrictMode>

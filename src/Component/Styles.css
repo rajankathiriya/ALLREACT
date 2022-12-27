@@ -186,11 +186,10 @@ Reviews
      margin-left: auto;
      margin-right: auto;
  }
- 
- .container {
+ /* .container {
      width: 80vw;
      max-width: var(--fixed-width);
- }
+ } */
  
  .review {
      background: var(--clr-white);
