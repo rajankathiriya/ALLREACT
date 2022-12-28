@@ -92,9 +92,18 @@ import { ErrorBoundary } from 'react-error-boundary'
 import BuggyCounter from './Component/Error/BuggyCounter';
 import Example1 from './Component/Customhook/Example1';
 import { ErrorFallback } from './Component/Error/ErrorFallback';
-import Footer1 from './Component/Footer/Footer'
+
+import HeaderHOC from './Component/HOC/HeaderHOC';
+import MyHoc from './Component/HOC/MyHoc';
+import HomeHOC from './Component/HOC/HomeHOC';
+import LoginHOC from './Component/HOC/LoginHOC';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+let HomeHOCcom = MyHoc(HomeHOC)
+
 root.render(
   <React.StrictMode>
 
@@ -232,7 +241,15 @@ root.render(
 
     {/* ======================================Custom Hook====================================== */}
     {/* <Example1 /> */}
-    <Footer1 />
+
+
+    {/* ======================================HOC====================================== */}
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HomeHOCcom />}>Home</Route>
+        <Route path='/login' element={<LoginHOC />}>Login</Route>
+      </Routes>
+    </BrowserRouter>
 
     {/* <App /> */}
   </React.StrictMode>
