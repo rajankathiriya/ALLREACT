@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react'; 
+import { useState, useEffect } from 'react';
 export default function Fetch() {
     const [data, setdata] = useState([]);
 
@@ -15,23 +15,23 @@ export default function Fetch() {
 
     const Assending = () => {
         let mydata1 = [...data];
-        mydata1.sort(function(a,b) {
-            if(a.id > b.id)
-            return 1;
+        mydata1.sort(function (a, b) {
+            if (a.id > b.id)
+                return 1;
             else
-            return -1;   
-          })
-          setdata(mydata1)
+                return -1;
+        })
+        setdata(mydata1)
     }
     const Desending = () => {
-        let mydata1 = [...data]; 
-        mydata1.sort(function(a,b) {
-            if(a.id > b.id)
-            return -1
+        let mydata1 = [...data];
+        mydata1.sort(function (a, b) {
+            if (a.id > b.id)
+                return -1
             else
-            return 1;
-          })       
-          setdata(mydata1)
+                return 1;
+        })
+        setdata(mydata1)
     }
 
     return (

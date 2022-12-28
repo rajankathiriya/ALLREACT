@@ -14,7 +14,7 @@ export default function HeaderHOC() {
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-automx-3">
-                            <li className="nav-item active">
+                            <li className="nav-item active mx-2">
                                 <Link to={'/'}>Home</Link>
                             </li>
                             <li className="nav-item active">

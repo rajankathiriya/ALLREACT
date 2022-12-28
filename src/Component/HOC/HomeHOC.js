@@ -1,9 +1,11 @@
 import React from 'react'
 
+
 export default function HomeHOC() {
     return (
         <div className='m-5'>
-            This is home page
+            <h2 className="text-center">Welcome Home Page !</h2>
+
         </div>
     )
 }
