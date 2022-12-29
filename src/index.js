@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -55,7 +55,7 @@ import Reactusememo from './Component/ReactMemo/Reactusememo';
 
 import { Provider } from 'react-redux'
 import Counter from './Component/Reduxreduce/Counter';
-import store from './Component/Reduxreduce/Store/Store';
+// import store from './Component/Reduxreduce/Store/Store';
 import Registration2 from './Component/Axios/TokenRegistration/Registration';
 import Login from './Component/Axios/TokenRegistration/Login';
 import Globalaxios from './Component/Axios/Globalaxios'
@@ -95,14 +95,17 @@ import { ErrorFallback } from './Component/Error/ErrorFallback';
 
 import HeaderHOC from './Component/HOC/HeaderHOC';
 import MyHoc from './Component/HOC/MyHoc';
-import HomeHOC from './Component/HOC/HomeHOC';
 import LoginHOC from './Component/HOC/LoginHOC';
+import MainReducer from './Component/Reduxreduce/Thunk/MainReducer';
+import store from './Component/Reduxreduce/Thunk/Store/Store';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+const HomeHOCcom = React.lazy(() => import('./Component/HOC/HomeHOC'));
 
-let HomeHOCcom = MyHoc(HomeHOC)
+let HomeHOCcom1 = MyHoc(HomeHOCcom)
+
 
 root.render(
   <React.StrictMode>
@@ -243,13 +246,21 @@ root.render(
     {/* <Example1 /> */}
 
 
-    {/* ======================================HOC====================================== */}
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<HomeHOCcom />}>Home</Route>
-        <Route path='/login' element={<LoginHOC />}>Login</Route>
-      </Routes>
-    </BrowserRouter>
+    {/* ======================================HOC/Lazy Loading====================================== */}
+    {/* <BrowserRouter> 
+      <Suspense fallback={<h2 className='m-5'>Loading...</h2>}>
+
+        <Routes>
+          <Route path='/' element={<HomeHOCcom1 />}>Home</Route>
+          <Route path='/login' element={<LoginHOC />}>Login</Route>
+        </Routes>
+      </Suspense>
+    </BrowserRouter> */}
+
+    {/* ==================================Yunk Reducer============================ */}
+    <Provider store={store}>
+      <MainReducer />
+    </Provider>
 
     {/* <App /> */}
   </React.StrictMode>

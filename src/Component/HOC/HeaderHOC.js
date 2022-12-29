@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import CustomLink from '../CustomLink/CustomLink'
 
 
 export default function HeaderHOC() {
@@ -15,10 +16,10 @@ export default function HeaderHOC() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-automx-3">
                             <li className="nav-item active mx-2">
-                                <Link to={'/'}>Home</Link>
+                                <CustomLink to={'/'}>Home</CustomLink>
                             </li>
                             <li className="nav-item active">
-                                <Link to={'/login'}>Login</Link>
+                                <CustomLink to={'/login'}>Login</CustomLink>
                             </li>
 
 
