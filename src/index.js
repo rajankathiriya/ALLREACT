@@ -96,8 +96,11 @@ import { ErrorFallback } from './Component/Error/ErrorFallback';
 import HeaderHOC from './Component/HOC/HeaderHOC';
 import MyHoc from './Component/HOC/MyHoc';
 import LoginHOC from './Component/HOC/LoginHOC';
-import MainReducer from './Component/Reduxreduce/Thunk/MainReducer';
 import store from './Component/Reduxreduce/Thunk/Store/Store';
+import MainUser from './Component/Reduxreduce/Thunk/MainUser';
+import MainCounter from './Component/Reduxreduce/Thunk/MainCounter';
+import SagaCounter from './Component/Reduxreduce/Thunk/SagaCounter';
+import MainPostSaga from './Component/Reduxreduce/Thunk/MainPostSaga';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -187,8 +190,9 @@ root.render(
     {/* <MYreducerlevel2 /> */}
 
     {/* ------------------ -Login form with Token --------------------- */}
-    {/* <Registration2 /> */}
-    {/* <Login /> */}
+
+    {/* <Registration2 />
+    <Login /> */}
 
     {/* ------------------ -UseRef --------------------- */}
     {/* <AudioTask /> */}
@@ -247,7 +251,7 @@ root.render(
 
 
     {/* ======================================HOC/Lazy Loading====================================== */}
-    {/* <BrowserRouter> 
+    {/* <BrowserRouter>
       <Suspense fallback={<h2 className='m-5'>Loading...</h2>}>
 
         <Routes>
@@ -257,12 +261,17 @@ root.render(
       </Suspense>
     </BrowserRouter> */}
 
-    {/* ==================================Yunk Reducer============================ */}
+    {/* ==================================Tunk Reducer============================ */}
     <Provider store={store}>
-      <MainReducer />
+      {/* <MainCounter /> */}
+      {/* <MainUser /> */}
+      {/* <SagaCounter /> */}
+      <MainPostSaga />
     </Provider>
 
     {/* <App /> */}
+
+
   </React.StrictMode>
 );
 

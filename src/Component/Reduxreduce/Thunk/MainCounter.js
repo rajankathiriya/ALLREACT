@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { Asyncthunk, Minus, Plus } from './Action/Action';
-const MainReducer = () => {
+const MainCounter = () => {
     const Data = useSelector(y => y.counter)
 
     const myDis = useDispatch()
@@ -27,4 +27,4 @@ const MainReducer = () => {
     );
 }
 
-export default MainReducer;
+export default MainCounter;

@@ -24,7 +24,6 @@ export default function Headers() {
                         <li className='mx-3'>
                             <Link to={'/about'}>About</Link>
                         </li>
-
                     </ul>
                 </div>
             </nav>
