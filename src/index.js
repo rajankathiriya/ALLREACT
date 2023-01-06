@@ -96,11 +96,16 @@ import { ErrorFallback } from './Component/Error/ErrorFallback';
 import HeaderHOC from './Component/HOC/HeaderHOC';
 import MyHoc from './Component/HOC/MyHoc';
 import LoginHOC from './Component/HOC/LoginHOC';
-import store from './Component/Reduxreduce/Thunk/Store/Store';
+// import store from './Component/Reduxreduce/Thunk/Store/Store';
 import MainUser from './Component/Reduxreduce/Thunk/MainUser';
 import MainCounter from './Component/Reduxreduce/Thunk/MainCounter';
 import SagaCounter from './Component/Reduxreduce/Thunk/SagaCounter';
 import MainPostSaga from './Component/Reduxreduce/Thunk/MainPostSaga';
+import MyFunctionRe1 from './Component/Reduxreduce/Thunk/MyFunctionRe1';
+import MyFunctionRe2 from './Component/Reduxreduce/Thunk/MyFunctionRe2';
+import MyFunctionRe3 from './Component/Reduxreduce/Thunk/MyFunctionRe3';
+import Countertool from './Component/ReduxToolkit/Countertool';
+import store from './Component/ReduxToolkit/Store/Storetool'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -262,12 +267,21 @@ root.render(
     </BrowserRouter> */}
 
     {/* ==================================Tunk Reducer============================ */}
+    {/* <Provider store={store}> */}
+    {/* <MainCounter /> */}
+    {/* <MainUser /> */}
+    {/* <SagaCounter /> */}
+    {/* <MainPostSaga /> */}
+    {/* <MyFunctionRe1 /> */}
+    {/* <MyFunctionRe2 /> */}
+    {/* <MyFunctionRe3 /> */}
+    {/* </Provider> */}
+
     <Provider store={store}>
-      {/* <MainCounter /> */}
-      {/* <MainUser /> */}
-      {/* <SagaCounter /> */}
-      <MainPostSaga />
+      <Countertool />
     </Provider>
+
+
 
     {/* <App /> */}
 
