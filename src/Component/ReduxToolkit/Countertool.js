@@ -11,10 +11,7 @@ export default function Countertool() {
     const Mytextbox = (e) => {
         setdata(e.target.value)
     }
-    // const datasubmit = (e) => {
-    //     e.preventDefault()
-    //     console.log(data);
-    // }
+
     return (
         <div>
             <h1>{counter.value}</h1>
@@ -23,7 +20,6 @@ export default function Countertool() {
             <input type="text" onChange={Mytextbox} />
             <button onClick={() => { mydis(incrementanddecrement(data)) }}>IncrementbyNumber</button>
 
-            {/* <input type="submit" value="save" /> */}
         </div>
     )
 }
