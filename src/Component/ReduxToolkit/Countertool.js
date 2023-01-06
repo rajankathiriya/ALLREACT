@@ -1,6 +1,6 @@
 import { React, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { decrement, inbynum, increment, incrementanddecrement } from './Reducertoool'
+import { decrement, increment, incrementanddecrement } from './Reducertoool'
 
 export default function Countertool() {
     const mydis = useDispatch()
