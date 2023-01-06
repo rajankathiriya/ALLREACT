@@ -19,7 +19,6 @@ export default function Countertool() {
             <button onClick={() => { mydis(decrement()) }}>Decrement</button><br />
             <input type="text" onChange={Mytextbox} />
             <button onClick={() => { mydis(incrementanddecrement(data)) }}>IncrementbyNumber</button>
-
         </div>
     )
 }
