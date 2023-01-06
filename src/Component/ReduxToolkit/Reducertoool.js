@@ -19,7 +19,6 @@ const Reducertoool = createSlice({
             state.value += parseInt(action.payload)
         },
 
-
     },
 });
 
