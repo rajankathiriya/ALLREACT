@@ -1,11 +1,22 @@
+// import { configureStore } from '@reduxjs/toolkit'
+// import Reducertoool from '../Reducertoool'
+
+// const store = configureStore({
+//     reducer: {
+//         counter: Reducertoool
+//     }
+// });
+
+// export default store
+
+
 import { configureStore } from '@reduxjs/toolkit'
-import Reducertoool from '../Reducertoool'
+import Reducertooold from '../Reducertoool'
 
-const store = configureStore({
+const storeeasythunk = configureStore({
     reducer: {
-        counter: Reducertoool
+        post: Reducertooold
     }
-});
+})
 
-export default store
-
+export default storeeasythunk
