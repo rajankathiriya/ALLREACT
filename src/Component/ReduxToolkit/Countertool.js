@@ -40,17 +40,17 @@ const Countertool = () => {
         dis(getlist({ name: 1 }))
     }, [dis]);
     return (
-        <div>
+        <div><ul>
             {data?.data?.map((val, index) => {
                 return (
-                    <ul>
-                        <li key={index}>
-                            {val.name}
-                        </li>
-                    </ul>
+
+                    <li key={index}>
+                        {val.name}
+                    </li>
+
                 )
             })}
-        </div>
+        </ul>d</div>
     );
 }
 
