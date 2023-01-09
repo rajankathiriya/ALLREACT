@@ -4,10 +4,9 @@ import ClassApicall2 from './ClassApicall2'
 
 class ClassApicall extends Component {
 
-    state =
-        {
-            record: []
-        }
+    state = {
+        record: []
+    }
 
     componentDidMount() {
         axios.get('https://jsonplaceholder.typicode.com/photos')

@@ -107,6 +107,10 @@ import MyFunctionRe3 from './Component/Reduxreduce/Thunk/MyFunctionRe3';
 import Countertool from './Component/ReduxToolkit/Countertool';
 import store from './Component/ReduxToolkit/Store/Storetool'
 import storeeasythunk from './Component/ReduxToolkit/Store/Storetool';
+import Form from './Component/INTERVIEW/Form';
+import Apicall from './Component/INTERVIEW/Apicall';
+import BootstrapBundleMin from 'bootstrap/dist/js/bootstrap.bundle.min';
+import AlertDismissibleExample from './Component/Bootstrapalert';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -282,10 +286,14 @@ root.render(
       <Countertool />
     </Provider> */}
 
-    <Provider store={storeeasythunk}>
+    {/* <Provider store={storeeasythunk}>
       <Countertool />
-    </Provider>
+    </Provider> */}
 
+
+    {/* <Form /> */}
+    {/* <Apicall /> */}
+    <AlertDismissibleExample />
 
 
     {/* <App /> */}
