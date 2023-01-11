@@ -7,6 +7,8 @@ export const Minus = (payload) => ({
     type: "MINUS",
     payload
 })
+
+
 export const Multi = (payload) => ({
     type: "MULTI",
     payload

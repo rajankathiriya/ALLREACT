@@ -11,11 +11,11 @@
 
 
 import { configureStore } from '@reduxjs/toolkit'
-import Reducertooold from '../Reducertoool'
+import Reducertoool from '../Reducertoool'
 
 const storeeasythunk = configureStore({
     reducer: {
-        post: Reducertooold
+        post: Reducertoool
     }
 })
 

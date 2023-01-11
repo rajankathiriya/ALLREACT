@@ -50,7 +50,7 @@ const Countertool = () => {
 
                 )
             })}
-        </ul>d</div>
+        </ul></div>
     );
 }
 

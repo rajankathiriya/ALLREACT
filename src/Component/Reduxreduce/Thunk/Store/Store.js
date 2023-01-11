@@ -4,13 +4,13 @@ import RootReducer from '../RootReducer'
 import createSagaMiddleware from "redux-saga"
 import rootSaga from '../Saga/RootSaga'
 
-const sagaMiddleWare = createSagaMiddleware()
+// const sagaMiddleWare = createSagaMiddleware()
 
-const middleWare = [sagaMiddleWare]
+// const middleWare = [sagaMiddleWare]
+const middleWare = [thunk]
 
 const store = createStore(RootReducer, applyMiddleware(...middleWare))
 
-sagaMiddleWare.run(rootSaga)
+// sagaMiddleWare.run(rootSaga)
 
 export default store
-

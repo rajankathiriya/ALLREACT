@@ -111,6 +111,10 @@ import Form from './Component/INTERVIEW/Form';
 import Apicall from './Component/INTERVIEW/Apicall';
 import BootstrapBundleMin from 'bootstrap/dist/js/bootstrap.bundle.min';
 import AlertDismissibleExample from './Component/Bootstrapalert';
+import ApiPost from './Component/Apipost/Registration';
+import Reg from './Component/INTERVIEW/Reg';
+import Product from './Component/ReduxToolkit/ProductAPI/Product';
+import storeProduct from './Component/ReduxToolkit/ProductAPI/Store';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -175,7 +179,7 @@ root.render(
 
     {/* --------------------------API Post--------------------------- */}
 
-    {/* <Registration /><br></br><hr /> */}
+    {/* <ApiPost /><br></br><hr /> */}
     {/* <Loginform /> */}
 
     {/* --------------------------Test 2--------------------------- */}
@@ -272,15 +276,15 @@ root.render(
     </BrowserRouter> */}
 
     {/* ==================================Tunk Reducer============================ */}
-    {/* <Provider store={store}> */}
-    {/* <MainCounter /> */}
-    {/* <MainUser /> */}
-    {/* <SagaCounter /> */}
-    {/* <MainPostSaga /> */}
-    {/* <MyFunctionRe1 /> */}
-    {/* <MyFunctionRe2 /> */}
-    {/* <MyFunctionRe3 /> */}
-    {/* </Provider> */}
+    <Provider store={store}>
+      {/* <MainCounter /> */}
+      {/* <MainUser /> */}
+      {/* <SagaCounter /> */}
+      {/* <MainPostSaga /> */}
+      {/* <MyFunctionRe1 /> */}
+      {/* <MyFunctionRe2 /> */}
+      {/* <MyFunctionRe3 /> */}
+    </Provider>
 
     {/* <Provider store={store}>
       <Countertool />
@@ -290,11 +294,17 @@ root.render(
       <Countertool />
     </Provider> */}
 
+    <Provider store={storeProduct}>
+      <Product />
+    </Provider>
 
+    {/* =============================Interview============================= */}
     {/* <Form /> */}
     {/* <Apicall /> */}
-    <AlertDismissibleExample />
+    {/* <Reg /> */}
+    {/* =============================Interview============================= */}
 
+    {/* <AlertDismissibleExample /> */}
 
     {/* <App /> */}
 
