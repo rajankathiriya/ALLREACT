@@ -115,6 +115,11 @@ import ApiPost from './Component/Apipost/Registration';
 import Reg from './Component/INTERVIEW/Reg';
 import Product from './Component/ReduxToolkit/ProductAPI/Product';
 import storeProduct from './Component/ReduxToolkit/ProductAPI/Store';
+import Compo1 from './Component/PureComponent/Compo1';
+import FormClassscomp from './Component/PureComponent/FormClassscomp';
+import Counterint from './Component/INTERVIEW/Redux/Counter';
+import Storeinter from './Component/INTERVIEW/Redux/Store/Store';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -293,10 +298,10 @@ root.render(
     {/* <Provider store={storeeasythunk}>
       <Countertool />
     </Provider> */}
-
+    {/* 
     <Provider store={storeProduct}>
       <Product />
-    </Provider>
+    </Provider> */}
 
     {/* =============================Interview============================= */}
     {/* <Form /> */}
@@ -305,8 +310,16 @@ root.render(
     {/* =============================Interview============================= */}
 
     {/* <AlertDismissibleExample /> */}
+    <Provider store={Storeinter}>
+      <Counterint />
+    </Provider>
 
     {/* <App /> */}
+
+
+    {/* ================================PureComponent============================ */}
+    {/* <Compo1 /> */}
+    {/* <FormClassscomp /> */}
 
 
   </React.StrictMode>
