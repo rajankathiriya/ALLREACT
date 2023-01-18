@@ -119,6 +119,8 @@ import Compo1 from './Component/PureComponent/Compo1';
 import FormClassscomp from './Component/PureComponent/FormClassscomp';
 import Counterint from './Component/INTERVIEW/Redux/Counter';
 import Storeinter from './Component/INTERVIEW/Redux/Store/Store';
+import DefaultProps from './Component/Props/DefaultProps';
+import DynamicForm from './Component/DynamicForm';
 
 
 
@@ -310,9 +312,9 @@ root.render(
     {/* =============================Interview============================= */}
 
     {/* <AlertDismissibleExample /> */}
-    <Provider store={Storeinter}>
+    {/* <Provider store={Storeinter}>
       <Counterint />
-    </Provider>
+    </Provider> */}
 
     {/* <App /> */}
 
@@ -320,6 +322,9 @@ root.render(
     {/* ================================PureComponent============================ */}
     {/* <Compo1 /> */}
     {/* <FormClassscomp /> */}
+
+    {/* <DefaultProps /> */}
+    <DynamicForm />
 
 
   </React.StrictMode>
