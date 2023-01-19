@@ -10,12 +10,14 @@ export default function DynamicForm() {
     }]);
 
     const myHandler = (e) => {
-        setdata({ ...data, [e.target.name]: e.target.value })
+        setdata([{ ...data, [e.target.name]: e.target.value }])
     }
 
     const dataSubmit = (e) => {
         e.preventDefault();
         console.log(data);
+
+
 
     }
     const AddButton = (e) => {
@@ -33,7 +35,7 @@ export default function DynamicForm() {
     return (
         <div>
             <form onSubmit={dataSubmit}>
-                {data.map((val, index) => {
+                {data?.map((val, index) => {
                     return (
                         <div key={index}>
                             <label>Full Name:</label>
@@ -47,6 +49,7 @@ export default function DynamicForm() {
                             <label >Degree</label>
                             <input type="text" name="degree" id="" onChange={myHandler} value={val.degree} /><br />
                             <input type="submit" value="Save" /><br />
+
                             <button onClick={AddButton}>Add More...</button>
                         </div>
                     )
