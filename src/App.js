@@ -10,6 +10,7 @@ import ApiPost from './Component/Apipost/Registration';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import RequireAuth from './Component/Apipost/Private/Requiredau';
 import Product from './Component/Apipost/Product';
+import TaskApiDelete from './Component/TaskApiDelete';
 
 function App() {
 
@@ -25,13 +26,17 @@ function App() {
 
       {/* Authorization */}
 
-      <BrowserRouter>
+      {/* <div>This is the application</div> */}
+
+      {/* <BrowserRouter>
         <Routes>
           <Route path='/' element={<Loginform />}></Route>
           <Route path='/register' element={<ApiPost />}></Route>
           <Route path='/product' element={<RequireAuth><Product /></RequireAuth>}></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      <TaskApiDelete />
     </>
   );
 }
