@@ -92,7 +92,7 @@ export default function Login() {
                 <button onClick={Fetcdata} className='form-control btn btn-outline-danger'>Fetch Data</button>
             </form>
 
-            <div className="ag-theme-alpine" style={{ width: "100 %", height: 600 }}>
+            <div className="ag-theme-alpine" style={{ width: "100%", height: 600 }}>
                 <AgGridReact rowData={row} columnDefs={column}></AgGridReact>
             </div>
         </div>

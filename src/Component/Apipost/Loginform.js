@@ -39,9 +39,8 @@ export default function Loginform() {
                             console.log(r);
 
                             localStorage.setItem('user', JSON.stringify(r.data))
-                            myNav("/product")
+                            myNav("/products")
 
-                            toast("Registration Successfully..")
                         }).catch(
                             (r) => {
                                 toast("Invalid username or password")
@@ -70,3 +69,5 @@ export default function Loginform() {
         </div>
     )
 }
+
+

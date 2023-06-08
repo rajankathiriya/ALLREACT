@@ -7,7 +7,7 @@ let schema = yup.object().shape({
     middlename: yup.string().required("Middlename is required.."),
     lastname: yup.string().required("Lastname is required.."),
     email: yup.string().email("Email is required.."),
-    mobile: yup.string().required("Mobile is required..")
+    mobile: yup.string().min(10).required("Mobile is required..")
 })
 
 const FormikTask = () => {

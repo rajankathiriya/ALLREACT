@@ -16,7 +16,7 @@ export default function TaskApiDelete() {
     return (
         <div>
             <table>
-                <thead></thead>
+                <thead>hello</thead>
                 <tbody>
                     {data.map((val, index) => {
                         return (

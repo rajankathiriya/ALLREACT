@@ -27,7 +27,6 @@ const Formcollage = () => {
     ]
 
     const inputHandler = (e) => {
-        console.log(e);
         setdata({ ...data, [e.target.name]: e.target.value })
     }
 

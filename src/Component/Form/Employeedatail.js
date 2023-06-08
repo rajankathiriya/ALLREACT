@@ -55,7 +55,7 @@ const Employeedatail = () => {
         e.preventDefault()
         localStorage.setItem("form", JSON.stringify(Detail))
         console.log(Detail);
-        // setDetail({firstname:"",lastname:"",email:"",mobileNo:"",city:"",state:"",age:"",gender:"",hobbies:"" })
+        setDetail({ firstname: "", lastname: "", email: "", mobileNo: "", city: "", state: "", age: "", gender: "", hobbies: "" })
     }
     return (
         <div>
@@ -88,7 +88,7 @@ const Employeedatail = () => {
 
                 <input type="submit" value="Submit" />
 
-                {/* <div>{localStorage.getItem("form",JSON.stringify(Detail))}</div> */}
+                <div>{localStorage.getItem("form", JSON.stringify(Detail))}</div>
             </form>
 
         </div>

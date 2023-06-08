@@ -3,6 +3,7 @@ import Mydata from '../Mydata';
 
 const MYreducerlevel2 = () => {
 
+    const [add, setadd] = useState("");
     const myreducer = (state, action) => {
         switch (action.type) {
             case "ADD":
@@ -13,11 +14,12 @@ const MYreducerlevel2 = () => {
                 mdata.splice(action.payload, 1)
 
                 return mdata;
-            // const Myedit = (index) => {
-            //     let maindata = data[index]
-            //     setitem(maindata);
-            //     setadd(index);
-            // }
+
+                const Myedit = (index) => {
+                    let maindata = data[index]
+                    setitem(maindata);
+                    setadd(index);
+                }
 
             default:
                 return state

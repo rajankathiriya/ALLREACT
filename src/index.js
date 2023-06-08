@@ -31,7 +31,7 @@ import TestAPI3 from './Component/Test/TestAPI3';
 import TestAPI4 from './Component/Test/TestAPI4';
 import TestAPI5 from './Component/Test/TestAPI5';
 import TestAPI6 from './Component/Test/TestAPI6';
-import Formcollage from './Component/Form/Formcollage';
+import Formcollage from './Component/Form/ReactSelect';
 import FormTask from './Component/Form/FormTask';
 import Mydataformik from './Component/Form/Myformikform';
 import FormikTask from './Component/Form/FormikTask';
@@ -44,8 +44,8 @@ import Task1empmain from './Component/Props/Task1empmain';
 import Aggrid1 from './Component/Grid/Aggrid1';
 import Aggrid2 from './Component/Grid/Aggrid2';
 import ClassApicall from './Component/Class/ClassApicall';
-import Loginform from './Component/Apipost/Loginform';
-import Registration from './Component/Apipost/Registration';
+// import Loginform from './Component/Apipost/Loginform';
+// import Registration from './Component/Apipost/Registration';
 import Submitpost from './Component/Test/Test2/Submitpost';
 import Image from './Component/Test/Test2/Image';
 import Tasktest1 from './Component/Test/Test2/Tasktest1';
@@ -57,7 +57,7 @@ import { Provider } from 'react-redux'
 import Counter from './Component/Reduxreduce/Counter';
 // import store from './Component/Reduxreduce/Store/Store';
 import Registration2 from './Component/Axios/TokenRegistration/Registration';
-import Login from './Component/Axios/TokenRegistration/Login';
+// import Login from './Component/Axios/TokenRegistration/Login';
 import Globalaxios from './Component/Axios/Globalaxios'
 
 import AudioTask from './Component/useRef/Audio';
@@ -95,7 +95,7 @@ import { ErrorFallback } from './Component/Error/ErrorFallback';
 
 import HeaderHOC from './Component/HOC/HeaderHOC';
 import MyHoc from './Component/HOC/MyHoc';
-import LoginHOC from './Component/HOC/LoginHOC';
+// import LoginHOC from './Component/HOC/LoginHOC';
 // import store from './Component/Reduxreduce/Thunk/Store/Store';
 import MainUser from './Component/Reduxreduce/Thunk/MainUser';
 import MainCounter from './Component/Reduxreduce/Thunk/MainCounter';
@@ -122,21 +122,31 @@ import Storeinter from './Component/INTERVIEW/Redux/Store/Store';
 import DefaultProps from './Component/Props/DefaultProps';
 import DynamicForm from './Component/DynamicForm';
 import Level3Form from './Component/Level3Form';
+import TaskApiDelete from './Component/TaskApiDelete';
+import RequireAuth from './Component/FoodAPI/RequireAuth';
+import Registration from './Component/FoodAPI/Registration';
+import Login from './Component/FoodAPI/Login';
+import ResetPass from './Component/ResetPass';
+import TEST from './TEST';
+import CounterNEW from './REDUX/CounterNEW';
+import storeNew from './REDUX/Store';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const HomeHOCcom = React.lazy(() => import('./Component/HOC/HomeHOC'));
-
 let HomeHOCcom1 = MyHoc(HomeHOCcom)
+
+const LoginHOC = React.lazy(() => import('./Component/HOC/LoginHOC'));
+let LoginHOC1 = MyHoc(LoginHOC)
 
 
 root.render(
   <React.StrictMode>
 
     <ToastContainer />
-    <App />
+    {/* <App /> */}
     {/* <Mytask /> */}
     {/* <Scrollbar /> */}
     {/* <Mycounter /> */}
@@ -144,6 +154,7 @@ root.render(
     {/* <Mydata /> */}
     {/* <Employeedatail /> */}
     {/* <StudentDetail /> */}
+    <TaskApiDelete />
 
     {/* ---------------------------------API/UseEffect--------------------------- */}
 
@@ -169,7 +180,7 @@ root.render(
 
     {/* --------------------------FORMIK-FORM--------------------------- */}
     {/* <Mydataformik /> */}
-    {/* <FormikTask />   */}
+    {/* <FormikTask /> */}
     {/* <Carformik /> */}
     {/* <Formyupvalidation /> */}
 
@@ -182,19 +193,20 @@ root.render(
     {/* --------------------------AG-Grid--------------------------- */}
     {/* <Aggrid1 /> */}
     {/* <Aggrid2 /> */}
+    {/* <StudentDetail /> */}
 
     {/* --------------------------Class Component--------------------------- */}
     {/* <ClassApicall /> */}
 
     {/* --------------------------API Post--------------------------- */}
 
-    {/* <ApiPost /><br></br><hr /> */}
-    {/* <Loginform /> */}
+    {/* <ApiPost /><br></br><hr />================ */}
+    {/* <Loginform />============ */}
 
     {/* --------------------------Test 2--------------------------- */}
     {/* <Submitpost /> */}
     {/* <Image /> */}
-    {/* <Tasktest1 /> */}
+    {/* <Tasktest1 /> ===========*/}
 
     {/* --------------------------Material UI--------------------------- */}
     {/* <Form1mui /> */}
@@ -203,7 +215,7 @@ root.render(
     {/* <ReactMemo /> */}
 
     {/* ------------------------useMemo memorible value----------------------------- */}
-    {/* <Reactusememo te3 xt="My name is rajan kathiriya.i am 20 years old. im currently pursuing in bechrol of commerse in M.S.university.I want to become feature in Web developer, I want to thing i am good chess player... " /> */}
+    {/*============ <Reactusememo te3 xt="My name is rajan kathiriya.i am 20 years old. im currently pursuing in bechrol of commerse in M.S.university.I want to become feature in Web developer, I want to thing i am good chess player... " /> */}
 
     {/* ------------------------React reduce / Level-1----------------------------- */}
     {/* <Provider store={store}>
@@ -272,14 +284,13 @@ root.render(
     {/* ======================================Custom Hook====================================== */}
     {/* <Example1 /> */}
 
-
     {/* ======================================HOC/Lazy Loading====================================== */}
     {/* <BrowserRouter>
       <Suspense fallback={<h2 className='m-5'>Loading...</h2>}>
 
         <Routes>
           <Route path='/' element={<HomeHOCcom1 />}>Home</Route>
-          <Route path='/login' element={<LoginHOC />}>Login</Route>
+          <Route path='/login' element={<LoginHOC1 />}>Login</Route>
         </Routes>
       </Suspense>
     </BrowserRouter> */}
@@ -287,9 +298,9 @@ root.render(
     {/* ==================================Tunk Reducer============================ */}
     <Provider store={store}>
       {/* <MainCounter /> */}
-      {/* <MainUser /> */}
+      {/*===================== <MainUser /> */}
       {/* <SagaCounter /> */}
-      {/* <MainPostSaga /> */}
+      {/* <MainPostSaga />================== */}
       {/* <MyFunctionRe1 /> */}
       {/* <MyFunctionRe2 /> */}
       {/* <MyFunctionRe3 /> */}
@@ -317,9 +328,11 @@ root.render(
     {/* <Provider store={Storeinter}>
       <Counterint />
     </Provider> */}
+    {/* <Provider store={storeNew}>
+      <CounterNEW />
+    </Provider> */}
 
     {/* <App /> */}
-
 
     {/* ================================PureComponent============================ */}
     {/* <Compo1 /> */}
@@ -329,7 +342,34 @@ root.render(
     {/* <DynamicForm /> */}
     {/* <Level3Form /> */}
 
+    {/* <BrowserRouter>
+      <Routes>
+        <Route>
+          <Route path="/" element={<Login />} />
+          <Route path="/registration" element={<Registration />} />
+          <Route
+            path="/home"
+            element={
+              <RequireAuth>
+                <Home />
+              </RequireAuth>
+            }
+          />
+        </Route>
+      </Routes>
+    </BrowserRouter> */}
 
+
+    {/* <BrowserRouter>
+      <Routes>
+        <Route>
+          <Route path="/resetpass/:id" element={<ResetPass />} />
+        </Route>
+      </Routes>
+    </BrowserRouter> */}
+
+    {/* <TEST /> */}
+    {/* <App /> */}
 
   </React.StrictMode>
 );

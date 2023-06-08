@@ -96,7 +96,7 @@ const StudentDetail = () => {
     return (
         <div className="mainstudent">
             <div className='studentform-background'>
-                <h3 style={{ textAlign: "center", fontWeight: 'bold' }}>Student Registration Form</h3><hr style={{ border: '2px solid white', backgroundColor: 'red' }} />
+                <h3 style={{ textAlign: "center", fontWeight: 'bold' }} className='text-black'>Student Registration Form</h3><hr style={{ border: '2px solid white', backgroundColor: 'red' }} />
                 <form action="#" onSubmit={datasubmit} autoComplete='off'>
                     <label htmlFor="">First Name:</label>
                     <input className="form-control" type="text" name="firstname" onChange={Handler} placeholder='Please enter First Name' /><span>{validation.firstname}</span><br />
@@ -143,8 +143,8 @@ const StudentDetail = () => {
 
 
                     <label htmlFor="">Hobbies</label>
-                    Cricket<input type="checkbox" name="hobbies" value="Cricket" onClick={Handler} />
-                    Chess<input type="checkbox" name="hobbies" value="Chess" onClick={Handler} />
+                    Cricket<input type="checkbox" name="hobbies" value="Cricket" className='text-black' onClick={Handler} />
+                    Chess<input type="checkbox" name="hobbies" value="Chess" className='text-black' onClick={Handler} />
 
                     <input className="form-control" type="submit" value="Submit" />
                 </form>
