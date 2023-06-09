@@ -1,30 +1,31 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux'
-import { Asyncthunk, Minus, Plus } from './Action';
-const COUNTERTHUNK = () => {
-    const Data = useSelector(y => y.counter)
+// import React from 'react';
+// import { useDispatch, useSelector } from 'react-redux'
+// import { Asyncthunk, Minus, Plus } from './Action';
+// const COUNTERTHUNK = () => {
 
-    const myDis = useDispatch()
+//     const Data = useSelector(y => y.counter)
 
-    const Myinc1 = () => {
-        myDis(Plus())
-    }
+//     const myDis = useDispatch()
 
-    const Myinc2 = () => {
-        myDis(Minus())
-    }
+//     const Myinc1 = () => {
+//         myDis(Plus())
+//     }
 
-    const Myinc3 = () => {
-        myDis(Asyncthunk(4))
-    }
-    return (
-        <div>
-            {Data}
-            <button onClick={Myinc1()}>Inc+</button>
-            <button onClick={Myinc2()}>Dec-</button>
-            <button onClick={Myinc3()}>Dec---</button>
-        </div>
-    );
-}
+//     const Myinc2 = () => {
+//         myDis(Minus())
+//     }
 
-export default COUNTERTHUNK;
+//     const Myinc3 = () => {
+//         myDis(Asyncthunk(4))
+//     }
+//     return (
+//         <div>
+//             {Data}
+//             <button onClick={Myinc1()}>Inc+</button>
+//             <button onClick={Myinc2()}>Dec-</button>
+//             <button onClick={Myinc3()}>Dec---</button>
+//         </div>
+//     );
+// }
+
+// export default COUNTERTHUNK;

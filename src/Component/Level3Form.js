@@ -204,7 +204,7 @@ export default function Level3Form() {
                         <hr />
 
                         <div className='text-center'>
-                            <input type="submit" value="Save" className='btn btn-outline-primary px-5' />
+                            <input type="submit" onClick={Clearform} value="Save" className='btn btn-outline-primary px-5' />
                             <button onClick={Clearform} className='btn btn-outline-primary px-5'>Clear</button>
                         </div>
                     </form>

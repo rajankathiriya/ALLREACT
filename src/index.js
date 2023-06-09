@@ -193,7 +193,7 @@ root.render(
     {/* <Simpleprops /> */}
     {/* <Task1props /> */}
     {/* <Item /> */}
-    {/* <Task1empmain /> */}
+    <Task1empmain />
 
     {/* --------------------------AG-Grid--------------------------- */}
     {/* <Aggrid1 /> */}
@@ -301,15 +301,15 @@ root.render(
     </BrowserRouter> */}
 
     {/* ==================================Tunk Reducer============================ */}
-    <Provider store={store}>
-      {/* <MainCounter /> */}
-      {/*===================== <MainUser /> */}
-      {/* <SagaCounter /> */}
-      {/* <MainPostSaga />================== */}
-      {/* <MyFunctionRe1 /> */}
-      {/* <MyFunctionRe2 /> */}
-      {/* <MyFunctionRe3 /> */}
-    </Provider>
+    {/* <Provider store={store}> */}
+    {/* <MainCounter /> */}
+    {/*===================== <MainUser /> */}
+    {/* <SagaCounter /> */}
+    {/* <MainPostSaga />================== */}
+    {/* <MyFunctionRe1 /> */}
+    {/* <MyFunctionRe2 /> */}
+    {/* <MyFunctionRe3 /> */}
+    {/* </Provider> */}
 
     {/* <Provider store={store}>
       <Countertool />
@@ -327,9 +327,9 @@ root.render(
       <Product />
     </Provider> */}
 
-    <Provider store={STORETHUNk}>
+    {/* <Provider store={STORETHUNk}>
       <COUNTERTHUNK />
-    </Provider>
+    </Provider> */}
 
     {/* =============================Interview============================= */}
     {/* <Form /> */}
