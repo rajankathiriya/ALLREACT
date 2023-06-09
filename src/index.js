@@ -96,7 +96,7 @@ import { ErrorFallback } from './Component/Error/ErrorFallback';
 import HeaderHOC from './Component/HOC/HeaderHOC';
 import MyHoc from './Component/HOC/MyHoc';
 // import LoginHOC from './Component/HOC/LoginHOC';
-// import store from './Component/Reduxreduce/Thunk/Store/Store';
+import store from './Component/Reduxreduce/Thunk/Store/Store';
 import MainUser from './Component/Reduxreduce/Thunk/MainUser';
 import MainCounter from './Component/Reduxreduce/Thunk/MainCounter';
 import SagaCounter from './Component/Reduxreduce/Thunk/SagaCounter';
@@ -105,7 +105,7 @@ import MyFunctionRe1 from './Component/Reduxreduce/Thunk/MyFunctionRe1';
 import MyFunctionRe2 from './Component/Reduxreduce/Thunk/MyFunctionRe2';
 import MyFunctionRe3 from './Component/Reduxreduce/Thunk/MyFunctionRe3';
 import Countertool from './Component/ReduxToolkit/Countertool';
-import store from './Component/ReduxToolkit/Store/Storetool'
+// import store from './Component/ReduxToolkit/Store/Storetool'
 import storeeasythunk from './Component/ReduxToolkit/Store/Storetool';
 import Form from './Component/INTERVIEW/Form';
 import Apicall from './Component/INTERVIEW/Apicall';
@@ -130,6 +130,11 @@ import ResetPass from './Component/ResetPass';
 import TEST from './TEST';
 import CounterNEW from './REDUX/CounterNEW';
 import storeNew from './REDUX/Store';
+import Counter111 from './REDUX/TOOLKIT/Counter';
+import STORE2 from './REDUX/TOOLKIT/Store';
+import COUNTER111 from './REDUX/TOOLKIT/Counter';
+import COUNTERTHUNK from './REDUX/THUNK/Counter';
+import STORETHUNk from './REDUX/THUNK/Store';
 
 
 
@@ -154,7 +159,7 @@ root.render(
     {/* <Mydata /> */}
     {/* <Employeedatail /> */}
     {/* <StudentDetail /> */}
-    <TaskApiDelete />
+    {/* <TaskApiDelete /> */}
 
     {/* ---------------------------------API/UseEffect--------------------------- */}
 
@@ -313,10 +318,18 @@ root.render(
     {/* <Provider store={storeeasythunk}>
       <Countertool />
     </Provider> */}
-    {/* 
-    <Provider store={storeProduct}>
+
+    {/* <Provider store={STORE2}>
+      <COUNTER111 />
+    </Provider> */}
+
+    {/* <Provider store={storeProduct}>
       <Product />
     </Provider> */}
+
+    <Provider store={STORETHUNk}>
+      <COUNTERTHUNK />
+    </Provider>
 
     {/* =============================Interview============================= */}
     {/* <Form /> */}

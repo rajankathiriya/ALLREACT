@@ -33,6 +33,7 @@
 // export const { } = Reducer.actions
 
 // export default Reducer.reducer
+
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
 export const getProduct = createAsyncThunk(

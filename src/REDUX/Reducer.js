@@ -14,3 +14,18 @@ export default (state = 0, { type, payload }) => {
             return state
     }
 }
+
+
+// export default (state=0,{type,payload})=>{
+//     switch (type){
+//         case "INC":
+//             return state+1;
+
+//             default :
+//             return state
+//     }
+// }
+
+// export const INCREMENT = () => {
+//     type: "iNCREMENT"
+// }
